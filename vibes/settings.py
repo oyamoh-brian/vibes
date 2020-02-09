@@ -37,6 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'business',
+    'discover',
+    'groups',
+    'login',
+    'vmessages',
+    'notifications',
+    'settings',
+    'signup',
+    'uprofile',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +63,17 @@ ROOT_URLCONF = 'vibes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR , 'business/templates/'),
+            os.path.join(BASE_DIR , 'discover/templates/'),
+            os.path.join(BASE_DIR , 'groups/templates/'),
+            os.path.join(BASE_DIR , 'login/templates/'),
+            os.path.join(BASE_DIR , 'vmessages/templates/'),
+            os.path.join(BASE_DIR , 'notifications/templates/'),
+            os.path.join(BASE_DIR , 'settings/templates/'),
+            os.path.join(BASE_DIR , 'signup/templates/'),
+            os.path.join(BASE_DIR , 'uprofile/templates/'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,8 +94,12 @@ WSGI_APPLICATION = 'vibes.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'vibes',
+        'HOST':'127.0.0.1',
+        'PORT':3306,
+        'USER':'root',
+        'PASSWORD':'',
     }
 }
 
@@ -118,3 +141,24 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR , 'business/static/'),
+    os.path.join(BASE_DIR , 'discover/static/'),
+    os.path.join(BASE_DIR , 'groups/static/'),
+    os.path.join(BASE_DIR , 'login/static/'),
+    os.path.join(BASE_DIR , 'vmessages/static/'),
+    os.path.join(BASE_DIR , 'notifications/static/'),
+    os.path.join(BASE_DIR , 'settings/static/'),
+    os.path.join(BASE_DIR , 'signup/static/'),
+    os.path.join(BASE_DIR , 'uprofile/static/'),
+
+]
+STATIC_ROOT = os.path.join(BASE_DIR , 'static_root/')
+
+MEDIA_URL = '/media/'
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR , 'media_root/')
