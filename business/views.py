@@ -1,8 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
+from .forms import sell_frm
 
 
 
 def business(request):
-    return HttpResponse("Hello business")
+    form = sell_frm()
+    if request.method =='POST':
+        return render(request , "business/business.html" , context = {"form":form})
+
+    else:
+        return render(request , "business/business.html" , context = {"form":form})
