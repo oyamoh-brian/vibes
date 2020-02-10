@@ -1,0 +1,147 @@
+*
+{
+  box-sizing: border-box;
+}
+.jumbotron
+{
+  height: 100px;
+  background-image: linear-gradient(to right , red,purple);
+}
+
+.stock
+{
+  width: 100%;
+  display: flex;
+}
+
+
+.stock>a
+  {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+
+  }
+
+
+.nav-bar
+{
+  display: flex;
+}
+
+
+.nav-bar>a
+{
+  color: #fff;
+  flex: 1;
+  text-decoration: none;
+}
+
+
+
+.stock>a:nth-child(2)
+  {
+    margin-left: 40%;
+    flex:1;
+  }
+
+
+
+.stock-manager
+{
+  display: flex;
+}
+
+.stock-manager>a
+{
+  flex: 1;
+  text-align: center;
+  background-color:#fff;
+  font-size: 18px;
+  color: navy-blue;
+  text-decoration: none;
+}
+
+
+.Goods
+{
+  box-sizing: border-box;
+  border-right: 1px solid red;
+  min-height: 100%;
+  padding: 20px;
+}
+
+
+.Goods>label
+{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration:underline;
+  color: purple;
+}
+
+
+.good-img
+{
+  background-color: none;
+  margin-left: 2%;
+}
+
+img
+{
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.card
+{
+  border-bottom:3px solid  purple;
+}
+
+
+.addingcart
+{
+  position: relative;
+  right: 0%;
+  width: 70%;
+  margin: 0px auto;
+}
+.addingcart>label
+{
+  position: relative;
+  text-align: right;
+  right: 0%;
+}
+
+
+.sell-good
+{
+  width: 60%;
+  margin: 20vh auto;
+}
+
+
+.sell-good>input
+{
+  margin-top: 1.5vw;
+  border: none;
+  border-bottom: 1px solid red;
+}
+
+.selling-stock>
+{
+
+}
+
+.selling-stock>label
+{
+  text-decoration: underline;
+  color: purple;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
