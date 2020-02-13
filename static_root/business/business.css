@@ -2,6 +2,7 @@
 {
   box-sizing: border-box;
 }
+
 .jumbotron
 {
   height: 100px;
@@ -37,12 +38,6 @@
   text-decoration: none;
 }
 
-
-.nav-bar>.form>input
-{
-  border-radius: 20px;
-  text-align: center;
-}
 
 
 .stock>a:nth-child(2)
@@ -134,8 +129,8 @@ img
 .sell-good>input
 {
   margin-top: 1.5vw;
-  /* border: none; */
-  /* border-bottom: 1px solid purple; */
+  border: none;
+  border-bottom: 1px solid red;
 }
 
 .selling-stock>
@@ -153,8 +148,7 @@ img
 }
 
 
-.sellingfrm>form>textarea
+.scrollimage
 {
-  text-align: center;
-  border-radius: 20px;
+  border: 200px solid purple;
 }

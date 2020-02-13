@@ -1,10 +1,11 @@
-from django.forms import ModelForm
+from django import forms
 from .models import sell_goods
 
-class sell_frm(ModelForm):
+class sell_frm(forms.ModelForm):
     class Meta:
         model = sell_goods
         fields = ('itemdesc','price' , 'itemimg')
+
         widgets = {
-            'itemdesc':attr({"name":"Description"})
+            'itemdesc':forms.Textarea(attrs = {'rows':4 , 'cols':30 , 'name':'description'}),
         }
