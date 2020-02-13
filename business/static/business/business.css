@@ -2,24 +2,26 @@
 {
   box-sizing: border-box;
 }
-.jumbotron
+.header
 {
-  height: 100px;
+  margin-top: 10px;
   background-image: linear-gradient(to right , red,purple);
 }
 
 .stock
 {
-  width: 100%;
+  width: 60%;
   display: flex;
+  margin: 0px auto;
 }
 
 
 .stock>a
   {
     text-align: center;
-    display: inline-block;
     text-decoration: none;
+    display: inline-block;
+    flex: 1;
 
   }
 
@@ -32,17 +34,36 @@
 
 .nav-bar>a
 {
+  box-sizing: border-box;
+  margin-top: 2%;
+  margin-bottom: 2%;
   color: #fff;
   flex: 1;
   text-decoration: none;
 }
 
 
+.form
+{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 .nav-bar>.form>input
 {
   border-radius: 20px;
   text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
+
+.nav-bar>a>span
+{
+  color: #fff;
+  font-size: 20px;
+}
+
 
 
 .stock>a:nth-child(2)
@@ -64,7 +85,7 @@
   text-align: center;
   background-color:#fff;
   font-size: 18px;
-  color: navy-blue;
+  color: navy;
   text-decoration: none;
 }
 
@@ -72,9 +93,9 @@
 .Goods
 {
   box-sizing: border-box;
-  border-right: 1px solid red;
   min-height: 100%;
   padding: 20px;
+  border-right: 2px solid red;
 }
 
 
@@ -106,21 +127,27 @@ img
 .card
 {
   border-bottom:3px solid  purple;
+  margin-bottom: 20px;
 }
 
 
 .addingcart
-{
-  position: relative;
-  right: 0%;
-  width: 70%;
-  margin: 0px auto;
-}
+  {
+    position: relative;
+    right: 0%;
+    width: 100%;
+    margin: 0px auto;
+  }
 .addingcart>label
 {
   position: relative;
   text-align: right;
   right: 0%;
+}
+
+.addingcart>input
+{
+  margin-left: 14px;
 }
 
 
@@ -157,4 +184,90 @@ img
 {
   text-align: center;
   border-radius: 20px;
+}
+.map
+{
+  color: purple;
+}
+
+
+#location
+{
+  color: magenta;
+}
+
+
+
+.logo
+{
+  display: inline;
+  flex:1;
+}
+.logo>img
+{
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 3vw;
+}
+
+
+
+@media screen and (min-width:1000px) {
+.Goods{
+    border-right: 1px solid red;
+  }
+
+
+.sellingfrm{
+
+}
+
+.stock > a{
+
+  }
+
+}
+
+
+@media screen and (max-width:1000px) {
+.Goods{
+    border-right: red;
+  }
+
+.sellingfrm{
+    display: none;
+
+}
+
+.stock > a{
+
+  }
+
+.hide-small,.form-search
+{
+  display: none;
+}
+.search-icon
+{
+  display: inline;
+  position: relative;
+  bottom: 2%;
+  right: 2%;
+  background-color: red;
+  width: 7%;
+  height: 4%;
+  border-radius: 50%;
+}
+
+.search-icon>a
+{
+  position: relative;
+  margin:15% 13%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 }
