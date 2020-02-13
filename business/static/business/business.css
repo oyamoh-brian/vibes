@@ -2,7 +2,7 @@
 {
   box-sizing: border-box;
 }
-.header
+.nav-bar
 {
   margin-top: 10px;
   background-image: linear-gradient(to right , red,purple);
@@ -215,6 +215,17 @@ img
 
 
 
+.search-icon
+{
+  display: none;
+}
+
+.lower-nav
+{
+  display: none;
+}
+
+
 @media screen and (min-width:1000px) {
 .Goods{
     border-right: 1px solid red;
@@ -227,6 +238,14 @@ img
 
 .stock > a{
 
+  }
+
+
+  .sellingfrm
+  {
+    position: fixed;
+    top: 0%;
+    right: 0%;
   }
 
 }
@@ -253,21 +272,50 @@ img
 .search-icon
 {
   display: inline;
-  position: relative;
+  position: fixed;
   bottom: 2%;
   right: 2%;
-  background-color: red;
+  background-color: magenta;
   width: 7%;
-  height: 4%;
+  height: 9%;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .search-icon>a
 {
+  position: fixed;
   position: relative;
-  margin:15% 13%;
+  bottom: 0px;
+  right: 0px;
+  margin-left:28%;
+  margin-top: 24%;
   text-decoration: none;
   font-size: 20px;
+  color: #fff;
+  z-index: 2;
 }
+
+.lower-nav
+{
+  width: 70%;
+  display: flex;
+  border-top:2px solid #000;
+  border-radius:200px;
+  margin: 0px auto;
+}
+.lower-nav>a
+{
+  display: inline;
+  flex: 1;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.lower-nav>a:first-child
+{
+  margin-left: 30px;
+}
+
 
 }
