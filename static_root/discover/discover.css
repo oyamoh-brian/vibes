@@ -3,9 +3,11 @@
   box-sizing: border-box;
 }
 
-.jumbotron
+.header
 {
+
   height: 100px;
+  margin-top: 1%;
   background-image: linear-gradient(to right , red,purple);
 }
 
@@ -17,19 +19,24 @@
 
 .nav-bar>a
 {
+  margin-top: 3%;
   color: #fff;
   flex: 1;
   text-decoration: none;
 }
 
-
-img
+.nav-bar>.frm
 {
-  box-sizing: border-box;
-  margin: 10px;
-  border-radius: 48%;
-  width: 15%;
-  height: 85%;
+  flex: 1;
+  margin-top: 3%;
+}
+
+.nav-bar>.frm>form>input
+{
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+
 }
 
 
@@ -39,6 +46,15 @@ img
   color: purple;
   width: 100%;
   margin: 3%;
+}
+
+img
+{
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 48%;
+  width: 15%;
+  height: 85%;
 }
 
 
@@ -85,4 +101,60 @@ img
 .usersinfo>.userdescription>.follow>a
 {
   margin-right: 20%;
+}
+
+.scrollimage
+{
+  border-radius: 100px;
+  border: 2px solid purple;
+  /* background-color: #f2e6ff; */
+}
+
+.scrollimage>.nearby>img
+{
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 48%;
+  width: 11%;
+  height: 85%;
+}
+.nearby
+{
+  display: inline;
+}
+
+
+.scrollimage>.nearby>img:nth-child(1)
+{
+    margin-left: 5%;
+    /* display: block; */
+}
+
+/* .scrollimage>.nearby>a:nth-child(1)
+{
+  box-sizing: border-box;
+  display: block;
+  margin: 10px;
+  margin-left: 10%;
+}
+
+.scrollimage>.nearby>a
+{
+  box-sizing: border-box;
+  display: block;
+  margin: 10px;
+  margin-left: 10%;
+} */
+
+
+.around-you
+{
+  width: 100%;
+}
+
+.around-you>label
+{
+  font-size: 20px;
+  margin-left: 5%;
+  color: purple;
 }

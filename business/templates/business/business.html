@@ -15,7 +15,6 @@
     <title>Business</title>
   </head>
   <body>
-
     <div class="header">
         <div class="nav-bar">
               <div class="logo">
@@ -24,41 +23,51 @@
 
 
 
-              <a href="#">
+              <a href="{% url 'profile:profile' %}">
                 <span class="fa fa-home"></span>
-                  Home
+
               </a>
 
               <a href="#">
                 <span class="fa fa-shopping-basket"></span>
-                Orders
+
               </a>
 
               <a href="#" class="hide-small">
                 <span class="fa fa-line-chart"></span>
-                Analitics
+
               </a>
 
               <a href="#" class="hide-small">
-                <span class="fa fa-pen"></span>
-                Manage Stock
+                <span class="fa fa-pencil"></span>
+
               </a>
-              <a href="{% url 'discover:discover' %}">
+              <a href="{% url 'discover:discover' %}" class="hide-small">
                 <span class="fa fa-map-marker map"></span>
-                Discover
+
+              </a>
+
+
+              <a href="{% url 'groups:groups' %}">
+                <span class="fa fa-users"></span>
+
+              </a>
+
+              <a href="{% url 'notifications:notifications' %}">
+                <span class="fa fa-bell"></span>
+
               </a>
 
 
               <a href="#" class="hide-small">
                 <span class="fa fa-calculator"></span>
-                Calculator
+
               </a>
 
-            <form class="form horizontal-form form-search" action="#" method="get">
-              <input type="text" name="search" value="" autocomplete="on" autofocus placeholder="Search">
-              <input type="button" name="" value="Search" class="fa fa-link">
-            </form>
+              <!-- <a href="{% url 'settings:settings' %}" class="hide-small">
+                <span class="fa fa-cog"></span>
 
+              </a> -->
 
         </div>
 
@@ -154,17 +163,27 @@
 
           <a href="#" class="hide-small">
             <span class="fa fa-line-chart"></span>
-            Analitics
           </a>
 
           <a href="#" class="hide-small">
-            <span class="fa fa-pen"></span>
-            Manage Stock
+            <span class="fa fa-pencil"></span>
           </a>
+
+
+            <a href="{% url 'discover:discover' %}" class="hide-small">
+              <span class="fa fa-map-marker map"></span>
+            </a>
+
+
           <a href="#" class="hide-small">
             <span class="fa fa-calculator"></span>
-            Calculator
           </a>
+
+
+          <form class="form horizontal-form form-search" action="#" method="get">
+            <input type="text" name="search" value="" autocomplete="on" autofocus placeholder="Search">
+            <input type="button" name="" value="Search" class="fa fa-link">
+          </form>
 
         </div>
 

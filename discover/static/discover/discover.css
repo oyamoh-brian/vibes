@@ -3,9 +3,11 @@
   box-sizing: border-box;
 }
 
-.jumbotron
+.header
 {
+
   height: 100px;
+  margin-top: 1%;
   background-image: linear-gradient(to right , red,purple);
 }
 
@@ -17,6 +19,7 @@
 
 .nav-bar>a
 {
+  margin-top: 3%;
   color: #fff;
   flex: 1;
   text-decoration: none;
@@ -25,6 +28,7 @@
 .nav-bar>.frm
 {
   flex: 1;
+  margin-top: 3%;
 }
 
 .nav-bar>.frm>form>input
@@ -32,7 +36,7 @@
   border-radius: 20px;
   border: none;
   text-align: center;
-  
+
 }
 
 
@@ -101,9 +105,9 @@ img
 
 .scrollimage
 {
-  border-radius: 200px;
+  border-radius: 100px;
   border: 2px solid purple;
-  background-color: #f2e6ff;
+  /* background-color: #f2e6ff; */
 }
 
 .scrollimage>.nearby>img
@@ -111,7 +115,7 @@ img
   box-sizing: border-box;
   margin: 10px;
   border-radius: 48%;
-  width: 15%;
+  width: 11%;
   height: 85%;
 }
 .nearby
