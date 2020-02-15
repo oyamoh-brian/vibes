@@ -1,11 +1,17 @@
 *
 {
   box-sizing: border-box;
+  background-color: #fbfbfb;
+
 }
 .nav-bar
 {
+  display: flex;
   margin-top: 10px;
-  background-image: linear-gradient(to right , red,purple);
+  color: #000;
+  height: 13vh;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .stock
@@ -16,19 +22,27 @@
 }
 
 
-.stock>a
+.stock>button
   {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    width: 50%;
     flex: 1;
-
+    border: 1px solid navy;
+    /* box-shadow: 1px 1px 3px #000; */
+    margin-bottom: 8px;
   }
 
 
-.nav-bar
+.stock>button:last-child
 {
-  display: flex;
+  margin-left: 30px;
+}
+
+.stock>button>a
+{
+  /* color: magenta; */
 }
 
 
@@ -37,31 +51,29 @@
   box-sizing: border-box;
   margin-top: 2%;
   margin-bottom: 2%;
-  color: #fff;
+  color: #000;
   flex: 1;
   text-decoration: none;
 }
-
-
-.form
+.nav-bar>input
 {
+  box-sizing: border-box;
   margin-top: 2%;
   margin-bottom: 2%;
-}
-
-.nav-bar>.form>input
-{
-  border-radius: 20px;
+  color: #000;
+  flex: 1;
+  text-decoration: none;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  background-color: #fff;
+  /* height: 100%; */
 }
 
 
 .nav-bar>a>span
 {
-  color: #fff;
+  color: #aaa;
   font-size: 20px;
+  margin-left: 50%;
 }
 
 
@@ -95,17 +107,16 @@
   box-sizing: border-box;
   min-height: 100%;
   padding: 20px;
-  border-right: 2px solid red;
+  border-right: 2px;
 }
 
 
-.Goods>label
+.Goods>strong>label
 {
   font-size: 20px;
   width: 100%;
   text-align: center;
-  text-decoration:underline;
-  color: purple;
+  text-decoration:none;
 }
 
 
@@ -128,6 +139,7 @@ img
 {
   border-bottom:3px solid  purple;
   margin-bottom: 20px;
+  color:#666;
 }
 
 
@@ -154,36 +166,45 @@ img
 .sell-good
 {
   width: 60%;
-  margin: 20vh auto;
+  margin: 10vh auto;
 }
 
 
 .sell-good>input
 {
   margin-top: 1.5vw;
-  /* border: none; */
-  /* border-bottom: 1px solid purple; */
+  background-color: #fff;
+  color: #000;
 }
 
-.selling-stock>
+.sell-good>button
 {
+  margin-top: 1.5vw;
+  color: #000;
+}
+
+
+.selling-stock
+{
+  border: 1px solid #cccccc;
 
 }
 
-.selling-stock>label
+.selling-stock>strong>label
 {
-  text-decoration: underline;
-  color: purple;
+  text-decoration: none;
+  background-color: #00aaaa;
+  opacity: .8;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 
 .sellingfrm>form>textarea
 {
   text-align: center;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 #location
@@ -220,11 +241,11 @@ img
 
 @media screen and (min-width:1000px) {
 .Goods{
-    border-right: 1px solid red;
+    border-right: 1px solid #ccc;
   }
 
 .stock > a{
-
+  color:#aaa;
   }
 
   .sellingfrm
@@ -242,7 +263,7 @@ img
 /* start of media query */
 @media screen and (max-width:1000px) {
 .Goods{
-    border-right: red;
+    border-right: #ccc;
   }
 
 .sellingfrm{
@@ -257,8 +278,17 @@ img
 .stock > a{
 
   }
+.form-search
+{
+    display: none;
+}
 
-.hide-small,.form-search
+.form-search>input
+{
+  display: none;
+}
+
+.hide-small
 {
   display: none;
 }
@@ -296,13 +326,20 @@ img
   border-top:2px solid #000;
   /* border-radius:200px; */
   /* margin: 0px auto; */
-  background-color: purple;
+  background-color: #f4f4f4;
   position: fixed;
   bottom: 2%;
   /* left: 16%; */
   z-index: 1;
   opacity: .5;
 }
+.lower-nav>a>span
+{
+  color: #aaa;
+  font-size: 20px;
+  margin-left: 50%;
+}
+
 
 
 .nav-bar>a
