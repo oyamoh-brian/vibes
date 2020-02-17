@@ -12,5 +12,5 @@ urlpatterns = [
     url('^notifications/' , include('notifications.urls')),
     url('^settings/' , include('settings.urls')),
     url('^signup/' , include('signup.urls')),
-    url('^uprofile/' , include('uprofile.urls')),
+    url('^profile/' , include('uprofile.urls')),
 ]+static(settings.MEDIA_URL , document_root = settings.MEDIA_ROOT)

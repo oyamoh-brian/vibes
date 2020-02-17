@@ -1,1 +1,83 @@
+{% load static %}
+
 <!-- The profile page -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'uprofile/css/style.css' %}">
+    <title>Uprofile</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navbar">
+        <div class="img-logo">
+
+        </div>
+      </div>
+      <div class="navbar first">
+        <input type="search" name="" value="" placeholder="search.." style="border-radius:50px;padding-left:10px;">
+      </div>
+      <a href="#">
+        <div class="navbar">
+          Home
+        </div>
+      </a>
+      <a href="#">
+        <div class="navbar">
+          Groups
+        </div>
+      </a>
+      <a href="#">
+        <div class="navbar">
+          Notification
+        </div>
+      </a>
+      <a href="#">
+        <div class="navbar">
+          Business
+        </div>
+      </a>
+    </div>
+    <!-- content-->
+    <div class="row profile">
+      <div class="col-md-3 profile-section">
+        <center>
+        <div class="img-logo2"></div>
+        <p>username</p>
+        <h6 class="text-success">online</h6>
+        <div class=""><br>
+          <p><span>15 </span> Messages</p>
+          <p> Downloads</p>
+        </div>
+        <center>
+      </div>
+      <div class="col-md-9">
+        <center>
+          <h4>Events</h4>
+        </center>
+        <hr>
+        <center>
+          <div class="template row">
+            <div class=" col-md-4 video-section">
+
+            </div>
+            <div class="col-md-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </div>
+          </div>
+          <div class="template row">
+            <div class=" col-md-4 video-section">
+
+            </div>
+            <div class="col-md-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

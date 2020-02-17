@@ -324,14 +324,9 @@ img
   width: 100%;
   display: flex;
   border-top:2px solid #000;
-  /* border-radius:200px; */
-  /* margin: 0px auto; */
   background-color: #f4f4f4;
-  position: fixed;
-  bottom: 2%;
-  /* left: 16%; */
   z-index: 1;
-  opacity: .5;
+  opacity: 1;
 }
 .lower-nav>a>span
 {
