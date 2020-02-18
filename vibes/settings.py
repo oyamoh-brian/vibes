@@ -98,8 +98,8 @@ DATABASES = {
         'NAME': 'vibes',
         'HOST':'127.0.0.1',
         'PORT':3306,
-        'USER':'root',
-        'PASSWORD':'',
+        'USER':'steve',
+        'PASSWORD':'steve',
     }
 }
 

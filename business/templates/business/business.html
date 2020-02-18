@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <meta charset="utf-8">
-    <title>Business</title>
+    <title>Vibes | Business</title>
   </head>
   <body>
     <div class="header">
@@ -21,7 +21,7 @@
                   <img src="{% static 'business/img/vibes.jpg' %}" alt="">
               </div>
 
-
+                <input type="text" name="search" value="" autocomplete="on" autofocus placeholder="Search">
 
               <a href="{% url 'profile:profile' %}">
                 <span class="fa fa-home"></span>
@@ -69,6 +69,7 @@
 
               </a> -->
 
+
         </div>
 
     </div>
@@ -76,13 +77,14 @@
     <div class="container">
 
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-lg-8 col-xl-8">
+          <div class="col-xs-12 col-sm-12 col-lg-7 col-xl-7">
                 <div class="Goods">
-                    <label>Goods</label>
+                    <strong><label>Goods</label></strong>
                     <div class="stock">
-                      <a href='#'>Buy Goods </a>
-                      <a href="#">Profits</a>
-                      <a href='#'>Order </a>
+
+                      <button type="button" name="button"><a href='#'>Buy</a></button>
+
+                      <button type="button" name="button"><a href='#'>Order </a></button>
                     </div>
 
                     <div class="gen-good card">
@@ -142,15 +144,15 @@
 
             </div>
 
-              <div class="col-xs-12 col-sm-12 col-lg-4 col-xl-4 sellingfrm">
+              <div class="col-xs-12 col-sm-12 col-lg-5 col-xl-5 sellingfrm">
                 <div class="selling-stock">
-                  <label>Sell</label>
-                </div>
+                  <strong><label>Sell</label></strong>
                 <form class="sell-good" action="" method="post">
                   {% csrf_token %}
                       {{form}}
-                    <input type="submit" name="submit" value="Sell" class="btn btn-info">
+                    <button name="submit" value="Sell" class="btn btn-info">Sell item</button>
                 </form>
+              </div>
               </div>
 
 
@@ -159,7 +161,7 @@
 
         </div>
 
-        <div class="lower-nav">
+        <div class="lower-nav" id="lower-nav">
 
           <a href="#" class="hide-small">
             <span class="fa fa-line-chart"></span>

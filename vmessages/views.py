@@ -5,4 +5,5 @@ from django.http import HttpResponse
 
 
 def messaging(request):
-    return HttpResponse("Hello messages")
+    # return HttpResponse("Hello messages")
+    return render(request , "messages/messages.html" ,)
