@@ -1,6 +1,44 @@
-{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vibes | signup</title>
+	<link rel="stylesheet" href="{% static 'signup/styles.css' %}"/>
+</head>
+<body>
+	<p>
+		<img src="{% static 'home/images/logo.jpg' %}" alt="image" id="photo">
+
+	</p>
+
+	<div class="bon">
+		<div class="bony">
+			<form action="{% url 'login:login' %}" method="post">
+
+				<h2>Signup to vibes</h2>
+				{% csrf_token %}
+				<input type="text" placeholder="Your full name" required autocomplete="true" class="input">
+				<input type="text" placeholder="Username" required autocomplete="true" class="input">
+				<input type="email"  placeholder="email" required autocomplete="true" class="input">
+				<input type="password" placeholder="Password" required  class="input">
+				<input type="password" placeholder="confirm password" required class="input">
+				<input type="submit" name="submit" value="signup" id="submit" class="input">
+
+			</form>
+
+				<p style="text-align:center">
+					<span>Already have an account?</span>
+						<a class="link" href="{% url 'login:login' %}">
+						Sign in
+					</a>
+				</p>
 
 
-{% block content %}
+	</div>
+</div>
 
-{% endblock %}
+		<footer>
+
+    </footer>
+</body>
+</html>

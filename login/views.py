@@ -5,4 +5,8 @@ from django.http import HttpResponse
 
 
 def login(request):
-    return render(request , "login/index.html")
+    return render(request , "login/login.html")
+
+
+def forgotcredetials(request):
+    return render(request , "login/forgot.html")

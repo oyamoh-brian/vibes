@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def signup(request):
-    return HttpResponse("Hello signup")
+    return render(request , "signup/signup.html")

@@ -4,7 +4,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('^$' , include('login.urls')),
+    url('^$' , include('home.urls')),
+    url('^login/' , include('login.urls')),
     url('^business/' , include('business.urls')),
     url('^discover/' , include('discover.urls')),
     url('^groups/' , include('groups.urls')),

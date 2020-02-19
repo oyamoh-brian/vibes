@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'settings',
     'signup',
     'uprofile',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR , 'settings/templates/'),
             os.path.join(BASE_DIR , 'signup/templates/'),
             os.path.join(BASE_DIR , 'uprofile/templates/'),
+            os.path.join(BASE_DIR , 'home/templates/'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -98,8 +100,8 @@ DATABASES = {
         'NAME': 'vibes',
         'HOST':'127.0.0.1',
         'PORT':3306,
-        'USER':'steve',
-        'PASSWORD':'steve',
+        'USER':'root',
+        'PASSWORD':'',
     }
 }
 
@@ -154,6 +156,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR , 'settings/static/'),
     os.path.join(BASE_DIR , 'signup/static/'),
     os.path.join(BASE_DIR , 'uprofile/static/'),
+    os.path.join(BASE_DIR , 'home/static/'),
 
 ]
 STATIC_ROOT = os.path.join(BASE_DIR , 'static_root/')
